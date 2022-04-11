@@ -7,8 +7,10 @@
     <input type="button" value="Click" id="clickbutton">
 
     <script>
+        var buttonclicked = localStorage.getItem("buttongame_buttonclicked")
+        
         document.getElementById("clickbutton").onclick = function() {
-            alert("Test");
+            buttonclicked++;
         }
     </script>
 </body>
