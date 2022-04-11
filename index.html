@@ -10,6 +10,8 @@
     <script>
         var buttonclicked = localStorage.getItem("buttongame_buttonclicked")
         
+        console.log("Warning!\nDon't Use Cheat Or Any JavaScript.");
+        
         var clicked = document.getElementById("clickedtext")
         if ('textContent' in clicked) {
             clicked.textContent = buttonclicked + ' Clicked';
@@ -23,7 +25,6 @@
         
         document.getElementById("clickbutton").onclick = function() {
             buttonclicked++;
-            console.log(String(buttonclicked));
             if ('textContent' in clicked) {
                 clicked.textContent = buttonclicked + ' Clicked';
             } else {
