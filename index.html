@@ -9,8 +9,13 @@
     <script>
         var buttonclicked = localStorage.getItem("buttongame_buttonclicked")
         
+        function savedata() {
+            localStorage.setItem("buttongame_buttonclicked", buttonclicked);
+        }
+        
         document.getElementById("clickbutton").onclick = function() {
             buttonclicked++;
+            console.log(String(buttonclicked));
         }
     </script>
 </body>
